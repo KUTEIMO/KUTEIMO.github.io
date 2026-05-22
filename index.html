@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Eduardo Soto — desarrollo web y móvil con foco en educación, gamificación y accesibilidad. USB Cúcuta." />
+  <meta name="author" content="Eduardo José Soto Herrera" />
+  <title>KUTEIMO · Eduardo Soto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
+</head>
+<body>
+  <div class="crt-overlay" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="top-bar">
+    <span class="logo">KUTEIMO_LAB</span>
+    <nav class="nav" aria-label="Principal">
+      <a href="#inicio">INICIO</a>
+      <a href="#sobre">SOBRE</a>
+      <a href="#proyectos">JUEGOS</a>
+      <a href="#stack">STACK</a>
+      <a href="#contacto">LINK</a>
+      <a href="https://github.com/KUTEIMO" class="nav-github" target="_blank" rel="noopener">GITHUB</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-grid">
+        <div class="terminal boot-terminal" role="region" aria-label="Presentación">
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+            <span class="terminal-title">BOOT :: EDU-OS v2.0</span>
+          </div>
+          <pre class="terminal-body" id="boot-text"></pre>
+        </div>
+        <div class="hero-card">
+          <p class="hero-tag">INGENIERÍA DE SISTEMAS · USB CÚCUTA</p>
+          <h1>EDUARDO<br /><span class="glitch" data-text="SOTO">SOTO</span></h1>
+          <p class="hero-lead">
+            Construyo experiencias <strong>interactivas</strong> que enseñan:
+            plataformas gamificadas, simuladores, apps móviles y tours accesibles.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#proyectos">VER PROYECTOS</a>
+            <a class="btn btn-ghost" href="https://logika-cad29.web.app" target="_blank" rel="noopener">ABRIR LOGIKA</a>
+          </div>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <span>LOGIKA ◈ CONECTAU ◈ EULER ◈ SQL COMPILER ◈ TOUR 360 WCAG ◈ FIREBASE ◈ FLUTTER ◈ VITE ◈</span>
+      </div>
+    </section>
+
+    <section id="sobre" class="section sobre">
+      <h2 class="section-title"><span class="pixel-caret">&gt;</span> SOBRE_MÍ</h2>
+      <div class="sobre-grid">
+        <article class="panel">
+          <p>
+            Soy <strong>Eduardo José Soto Herrera</strong> (<a href="https://github.com/KUTEIMO">@KUTEIMO</a>).
+            Desarrollo software donde la interfaz no es decoración: es parte del aprendizaje.
+          </p>
+          <p>
+            Me muevo entre <em>web didáctica</em>, <em>apps Flutter</em>, <em>simuladores</em>
+            y <em>accesibilidad real</em> (teclado, lectores de pantalla, normativa colombiana).
+          </p>
+        </article>
+        <aside class="panel stats-panel">
+          <ul class="stat-list">
+            <li><span class="stat-label">MODO</span><span class="stat-val">BUILD + TEACH</span></li>
+            <li><span class="stat-label">FOCO</span><span class="stat-val">EDTECH · A11Y</span></li>
+            <li><span class="stat-label">BASE</span><span class="stat-val">CÚCUTA, CO</span></li>
+            <li><span class="stat-label">REPOS</span><span class="stat-val">7 PÚBLICOS</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section proyectos">
+      <h2 class="section-title"><span class="pixel-caret">&gt;</span> CARTUCHOS / PROYECTOS</h2>
+      <p class="section-sub">Selecciona un cartucho — cada uno es un producto con demo o repo documentado.</p>
+
+      <h3 class="cat-title">◆ EDUCACIÓN & MATEMÁTICAS</h3>
+      <div class="cartridge-grid">
+        <article class="cartridge cartridge-star">
+          <div class="cart-label">★ ESTRELLA</div>
+          <h4>LOGIKA</h4>
+          <p>Matemáticas discretas gamificadas. Logiko, modo colegio, Firebase.</p>
+          <div class="cart-tags"><span>Vite</span><span>Firebase</span><span>SPA</span></div>
+          <div class="cart-links">
+            <a href="https://logika-cad29.web.app" target="_blank" rel="noopener">DEMO</a>
+            <a href="https://github.com/KUTEIMO/LOGIKA" target="_blank" rel="noopener">CODE</a>
+          </div>
+        </article>
+        <article class="cartridge">
+          <h4>EULER</h4>
+          <p>Flutter + Firebase. Matemáticas para educación media.</p>
+          <div class="cart-tags"><span>Flutter</span><span>Web</span></div>
+          <div class="cart-links">
+            <a href="https://pefcmeem-633d9-e5f18.web.app" target="_blank" rel="noopener">DEMO</a>
+            <a href="https://github.com/KUTEIMO/PEFCMEEM-MOVIL" target="_blank" rel="noopener">CODE</a>
+          </div>
+        </article>
+        <article class="cartridge">
+          <h4>ECUACIONES</h4>
+          <p>Streamlit: AMB, ecuaciones diferenciales, gráficos 3D.</p>
+          <div class="cart-tags"><span>Python</span><span>Streamlit</span></div>
+          <div class="cart-links">
+            <a href="https://github.com/KUTEIMO/ecuaciones-simulador" target="_blank" rel="noopener">CODE</a>
+          </div>
+        </article>
+        <article class="cartridge">
+          <h4>SQL COMPILER</h4>
+          <p>Compilador didáctico: léxico, AST, semántica, Streamlit.</p>
+          <div class="cart-tags"><span>Python</span><span>Lark</span></div>
+          <div class="cart-links">
+            <a href="https://github.com/KUTEIMO/simulador-compilador-sql" target="_blank" rel="noopener">CODE</a>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="cat-title">◆ CONECTAU · EMPLEABILIDAD</h3>
+      <div class="cartridge-grid">
+        <article class="cartridge">
+          <h4>CONECTAU WEB</h4>
+          <p>React + TypeScript. Estudiantes ↔ empresas en Cúcuta.</p>
+          <div class="cart-tags"><span>React</span><span>TS</span></div>
+          <div class="cart-links">
+            <a href="https://conectau-be1a2.web.app" target="_blank" rel="noopener">DEMO</a>
+            <a href="https://github.com/KUTEIMO/ConectaU-web-page-MacondoLab" target="_blank" rel="noopener">CODE</a>
+          </div>
+        </article>
+        <article class="cartridge">
+          <h4>CONECTAU MÓVIL</h4>
+          <p>Flutter: vacantes, postulaciones, mensajes, admin.</p>
+          <div class="cart-tags"><span>Flutter</span><span>Firebase</span></div>
+          <div class="cart-links">
+            <a href="https://conectau-be1a2.web.app" target="_blank" rel="noopener">DEMO</a>
+            <a href="https://github.com/KUTEIMO/APPMOVIL-PROFESIONAL1-ConectaU-" target="_blank" rel="noopener">CODE</a>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="cat-title">◆ ACCESIBILIDAD & 360°</h3>
+      <div class="cartridge-grid cartridge-grid--single">
+        <article class="cartridge cartridge-a11y">
+          <h4>TOUR 360 ACCESIBLE</h4>
+          <p>Marzipano, WCAG 2.1, Res. MinTIC 1519. Teclado, VTT, auditoría automática.</p>
+          <div class="cart-tags"><span>Marzipano</span><span>WCAG</span><span>A11Y</span></div>
+          <div class="cart-links">
+            <a href="https://github.com/KUTEIMO/PROTOTIPO-360-CURSOR-V1" target="_blank" rel="noopener">CODE</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="section stack">
+      <h2 class="section-title"><span class="pixel-caret">&gt;</span> INVENTARIO_TÉCNICO</h2>
+      <div class="stack-grid">
+        <div class="stack-item">JavaScript</div>
+        <div class="stack-item">TypeScript</div>
+        <div class="stack-item">React</div>
+        <div class="stack-item">Vite</div>
+        <div class="stack-item">Flutter</div>
+        <div class="stack-item">Firebase</div>
+        <div class="stack-item">Firestore</div>
+        <div class="stack-item">Python</div>
+        <div class="stack-item">Streamlit</div>
+        <div class="stack-item">HTML/CSS</div>
+        <div class="stack-item">Marzipano</div>
+        <div class="stack-item">WCAG / A11Y</div>
+      </div>
+      <p class="stack-note">
+        Documentación en cada repo · despliegues en Firebase Hosting y Flutter Web cuando el proyecto lo exige.
+      </p>
+    </section>
+
+    <section id="contacto" class="section contacto">
+      <h2 class="section-title"><span class="pixel-caret">&gt;</span> INSERTAR_DISCO</h2>
+      <div class="contact-panel panel">
+        <p>Colaboraciones, revisión de código o conversación sobre un proyecto:</p>
+        <ul class="contact-links">
+          <li><a href="https://github.com/KUTEIMO">GitHub @KUTEIMO</a></li>
+          <li><a href="https://github.com/KUTEIMO/LOGIKA/issues">Issues en LOGIKA</a></li>
+          <li><a href="mailto:123103966+KUTEIMO@users.noreply.github.com">Email GitHub (noreply)</a></li>
+        </ul>
+        <p class="contact-hint">Universidad Simón Bolívar — Sede Cúcuta · Ingeniería de Sistemas</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Eduardo Soto · KUTEIMO · Código que enseña, conecta y deja huella.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
