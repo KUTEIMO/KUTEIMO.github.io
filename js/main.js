@@ -1,14 +1,13 @@
 (function () {
   const bootLines = [
-    "> INICIANDO EDU-OS...",
-    "> CARGANDO MÓDULOS: LOGIKA, CONECTAU, EULER...",
-    "> ACCESIBILIDAD: WCAG · MinTIC 1519 · OK",
-    "> GAMIFICACIÓN: LOGIKO ONLINE",
+    "> EDU-OS v2.1 — MODO PORTAFOLIO",
+    "> CARGANDO DEMOS EN VIVO... OK",
+    "> PROBLEMA → SOLUCIÓN → RESULTADO: ACTIVO",
+    "> PRODUCTOS: LOGIKA | CONECTAU | EULER | SQL | 360°",
     "> DESARROLLADOR: EDUARDO SOTO (@KUTEIMO)",
-    "> UBICACIÓN: USB CÚCUTA · INGENIERÍA DE SISTEMAS",
-    "> ESTADO: LISTO PARA ENSEÑAR Y CONECTAR",
+    "> ESPECIALIDAD: EDTECH · DEPLOY · ACCESIBILIDAD",
     "",
-    "Pulsa un cartucho abajo o abre LOGIKA ▶"
+    "Scroll ↓ o pulsa EXPLORAR DEMOS ▶"
   ];
 
   const bootEl = document.getElementById("boot-text");
@@ -19,15 +18,13 @@
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
   if (bootEl) {
-    let lineIndex = 0;
-    let charIndex = 0;
-    let output = "";
-
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
     if (prefersReduced) {
       bootEl.textContent = bootLines.join("\n");
     } else {
+      let lineIndex = 0;
+      let charIndex = 0;
+      let output = "";
       function tick() {
         if (lineIndex >= bootLines.length) return;
         const line = bootLines[lineIndex];
@@ -35,12 +32,12 @@
           output += line[charIndex];
           charIndex++;
           bootEl.textContent = output;
-          setTimeout(tick, line.startsWith(">") ? 28 : 12);
+          setTimeout(tick, line.startsWith(">") ? 26 : 10);
         } else {
           output += "\n";
           charIndex = 0;
           lineIndex++;
-          setTimeout(tick, 120);
+          setTimeout(tick, 100);
         }
       }
       tick();
@@ -58,5 +55,23 @@
         menuBtn.setAttribute("aria-expanded", "false");
       });
     });
+  }
+
+  const reveals = document.querySelectorAll(".reveal");
+  if (reveals.length && "IntersectionObserver" in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("is-visible");
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    );
+    reveals.forEach((el) => io.observe(el));
+  } else {
+    reveals.forEach((el) => el.classList.add("is-visible"));
   }
 })();
