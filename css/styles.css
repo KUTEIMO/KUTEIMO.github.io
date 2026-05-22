@@ -632,6 +632,7 @@ strong {
   text-decoration: none;
 }
 
+.cart-links .link-product,
 .cart-links .link-demo {
   background: var(--accent);
   color: var(--accent-ink);
@@ -641,6 +642,7 @@ strong {
   font-weight: bold;
 }
 
+.cart-links .link-product:hover,
 .cart-links .link-demo:hover {
   background: var(--accent-hover);
   color: var(--accent-ink);

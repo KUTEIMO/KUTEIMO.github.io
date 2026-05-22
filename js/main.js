@@ -1,13 +1,13 @@
 (function () {
   const bootLines = [
-    "> EDU-OS v2.1 — MODO PORTAFOLIO",
-    "> CARGANDO DEMOS EN VIVO... OK",
-    "> PROBLEMA → SOLUCIÓN → RESULTADO: ACTIVO",
-    "> PRODUCTOS: LOGIKA | CONECTAU | EULER | SQL | 360°",
+    "> EDU-OS v2.2 — MODO PRODUCTO",
+    "> ANALIZANDO PROBLEMAS DEL USUARIO...",
+    "> GENERANDO SOLUCIONES DE ALTO IMPACTO...",
+    "> CATÁLOGO: 7 PRODUCTOS PUBLICADOS",
     "> DESARROLLADOR: EDUARDO SOTO (@KUTEIMO)",
-    "> ESPECIALIDAD: EDTECH · DEPLOY · ACCESIBILIDAD",
+    "> ENFOQUE: PROBLEMA → PRODUCTO → IMPACTO",
     "",
-    "Scroll ↓ o pulsa EXPLORAR DEMOS ▶"
+    "Scroll ↓ o pulsa VER PRODUCTOS ▶"
   ];
 
   const bootEl = document.getElementById("boot-text");
