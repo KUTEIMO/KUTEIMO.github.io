@@ -10,9 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>" />
+  <link rel="icon" href="assets/avatar-kuteimo.svg" type="image/svg+xml" />
 </head>
 <body>
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
   <div class="crt-overlay" aria-hidden="true"></div>
   <div class="scanlines" aria-hidden="true"></div>
 
@@ -32,6 +33,18 @@
   <main>
     <section id="inicio" class="hero">
       <div class="hero-grid">
+        <aside class="hero-avatar reveal" aria-label="Identidad visual">
+          <div class="avatar-frame">
+            <img
+              src="assets/avatar-kuteimo.svg"
+              width="168"
+              height="168"
+              alt="Avatar pixel de Eduardo Soto, desarrollador de productos educativos y accesibles"
+              decoding="async"
+            />
+          </div>
+          <p class="avatar-caption">EDTECH · A11Y · BUILD</p>
+        </aside>
         <div class="terminal boot-terminal reveal" role="region" aria-label="Presentación">
           <div class="terminal-bar">
             <span></span><span></span><span></span>
@@ -49,10 +62,15 @@
           <p class="hero-sub">
             Edtech · empleabilidad · simuladores · accesibilidad real.
           </p>
+          <ul class="trust-strip" aria-label="Señales de confianza">
+            <li>7 demos documentadas</li>
+            <li>WCAG en productos</li>
+            <li>USB Cúcuta</li>
+          </ul>
           <div class="hero-actions">
             <a class="btn btn-primary btn-pulse" href="#proyectos">EXPLORAR DEMOS</a>
-            <a class="btn btn-ghost" href="https://logika-cad29.web.app" target="_blank" rel="noopener">PROBAR LOGIKA</a>
-            <a class="btn btn-accent" href="#contacto">TRABAJEMOS</a>
+            <a class="btn btn-secondary" href="https://logika-cad29.web.app" target="_blank" rel="noopener">PROBAR LOGIKA</a>
+            <a class="btn btn-secondary" href="#contacto">TRABAJEMOS</a>
           </div>
         </div>
       </div>
@@ -87,7 +105,7 @@
         <p class="pitch-text">
           ¿Necesitas un <strong>simulador</strong>, una <strong>plataforma educativa</strong> o un <strong>ecosistema web + móvil</strong>?
         </p>
-        <a class="btn btn-primary btn-pulse" href="#contacto">SOY EL INDICADO — HABLEMOS</a>
+        <a class="btn btn-primary" href="#contacto">SOY EL INDICADO — HABLEMOS</a>
       </div>
     </section>
 
@@ -112,7 +130,7 @@
             <li><span class="stat-label">BASE</span><span class="stat-val">CÚCUTA, CO</span></li>
             <li><span class="stat-label">PORTAFOLIO</span><span class="stat-val">7 EN PRODUCCIÓN</span></li>
           </ul>
-          <a class="btn btn-ghost btn-block" href="https://github.com/KUTEIMO?tab=repositories" target="_blank" rel="noopener">VER TODO EN GITHUB</a>
+          <a class="btn btn-secondary btn-block" href="https://github.com/KUTEIMO?tab=repositories" target="_blank" rel="noopener">VER TODO EN GITHUB</a>
         </aside>
       </div>
     </section>
@@ -233,7 +251,7 @@
 
       <div class="proyectos-cta reveal">
         <p>¿Quieres el mismo nivel de claridad y demo para tu idea?</p>
-        <a class="btn btn-primary btn-pulse" href="#contacto">AGENDA UNA CONVERSACIÓN</a>
+        <a class="btn btn-primary" href="#contacto">AGENDA UNA CONVERSACIÓN</a>
       </div>
     </section>
 
@@ -264,8 +282,8 @@
           Yo llevo la experiencia de usuario, el código y el deploy.
         </p>
         <div class="contact-actions">
-          <a class="btn btn-primary btn-pulse btn-lg" href="https://github.com/KUTEIMO/LOGIKA/issues/new" target="_blank" rel="noopener">ESCRÍBEME (GITHUB)</a>
-          <a class="btn btn-ghost btn-lg" href="https://github.com/KUTEIMO" target="_blank" rel="noopener">@KUTEIMO</a>
+          <a class="btn btn-primary btn-lg" href="https://github.com/KUTEIMO/LOGIKA/issues/new" target="_blank" rel="noopener">ESCRÍBEME (GITHUB)</a>
+          <a class="btn btn-secondary btn-lg" href="https://github.com/KUTEIMO" target="_blank" rel="noopener">@KUTEIMO</a>
         </div>
         <ul class="contact-links">
           <li><a href="https://logika-cad29.web.app" target="_blank" rel="noopener">Demo LOGIKA — referencia de calidad</a></li>
